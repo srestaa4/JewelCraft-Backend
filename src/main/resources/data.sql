@@ -1,11 +1,11 @@
 -- Initial Seed Data for JewelCraft MySQL Database
 
 -- Users
-INSERT INTO users (id, name, email, password, role, phone, city, address) VALUES
-('USR-CUST-1', 'Ananya Sharma', 'ananya@jewelcraft.com', 'password123', 'ROLE_CUSTOMER', '+91 98765 43210', 'Hyderabad', 'Road No 36, Jubilee Hills, Hyderabad'),
-('USR-SALES-1', 'Rajesh Varma', 'rajesh.sales@jewelcraft.com', 'password123', 'ROLE_SALESMAN', '+91 91234 56789', 'Hyderabad', 'Jubilee Hills Salon'),
-('USR-SALES-2', 'Priya Mehta', 'priya.sales@jewelcraft.com', 'password123', 'ROLE_SALESMAN', '+91 99887 76655', 'Mumbai', 'Bandra Luxury Lounge'),
-('USR-ADMIN-1', 'K. Reddy (Director)', 'admin@jewelcraft.com', 'admin123', 'ROLE_ADMIN', '+91 90000 11111', 'Hyderabad', 'REDDY Headquarters');
+INSERT INTO users (id, name, email, password, role, phone, city, address, employee_code, showroom_id) VALUES
+('USR-CUST-1', 'Ananya Sharma', 'ananya@jewelcraft.com', 'password123', 'ROLE_CUSTOMER', '+91 98765 43210', 'Hyderabad', 'Road No 36, Jubilee Hills, Hyderabad', NULL, NULL),
+('USR-SALES-1', 'Rajesh Varma', 'rajesh.sales@jewelcraft.com', 'password123', 'ROLE_SALESMAN', '+91 91234 56789', 'Hyderabad', 'Jubilee Hills Salon', 'SALES-HYD-04', 'SHW-HYD-01'),
+('USR-SALES-2', 'Priya Mehta', 'priya.sales@jewelcraft.com', 'password123', 'ROLE_SALESMAN', '+91 99887 76655', 'Mumbai', 'Bandra Luxury Lounge', 'SALES-MUM-02', 'SHW-MUM-02'),
+('USR-ADMIN-1', 'K. Reddy (Director)', 'admin@jewelcraft.com', 'admin123', 'ROLE_ADMIN', '+91 90000 11111', 'Hyderabad', 'REDDY Headquarters', NULL, NULL);
 
 -- Showrooms
 INSERT INTO showrooms (id, showroom_name, address, city, phone, email, opening_time, closing_time, status) VALUES
